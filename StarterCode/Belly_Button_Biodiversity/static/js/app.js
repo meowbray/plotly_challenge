@@ -39,8 +39,8 @@ function buildCharts(sample) {
     let otu_labels = samples["otu_labels"];
 
     let trace1 = {
-      labes: otu_ids,
-      values: sample_values,
+      labes: otu_ids.slice(0, 10),
+      values: sample_values.slice(0, 10),
       type: "pie"
     };
 
